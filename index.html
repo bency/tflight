@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>JB Clock</title>
+        <link rel="stylesheet" href="jbclock.css" type="text/css" media="all" />
+        <script type="text/javascript" src="jquery-1.8.0.min.js"></script>
+        <script type="text/javascript" src="tflight.js"></script>
+        <script type="text/javascript">
+          $(document).ready(function(){CountDown();});
+        </script>
+    </head>
+    <body>
+      <div>
+        <div class='clock'>
+            <label class='info'>遠東路-興仁路 路口</label>
+            <canvas id="canvas_1" width="188" height="188">
+            </canvas>
+            <canvas id="canvas_2" width="188" height="188">
+            </canvas>
+            <div class="text">
+                <p class="val">0</p>
+                <p class="type_seconds">Seconds</p>
+            </div>
+            <button class='toggle' OnClick='toggle();'>切換燈號</button>
+          </div>
+        <div class='clock'>
+        <div>
+        <label id='rstart'>timer0 start</label>
+        </div>
+        <div>
+        <label id='rstop'>timer0 stop</label>
+        </div>
+        <div>
+        <label id='gstart'>timer1 start</label>
+        </div>
+        <div>
+        <label id='gstop'>timer1 stop</label>
+        </div>
+        </div>
+      </div>
+    </body>
+</html>
